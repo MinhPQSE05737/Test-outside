@@ -4,9 +4,11 @@
     border: 3px solid #73AD21;
     padding: 10px;
 }
-.imagelogo{
+
+.imagelogo {
     text-align: center;
 }
+
 .logoImage {
     display: none;
 }
@@ -18,17 +20,18 @@
 
 }
 
-@media (max-width: 400px){
-    .image{
+@media (max-width: 400px) {
+    .image {
         display: none;
-    }
-    .logoImagefront{
-        display: none;
-    }
-    .logoImage{
-       display:block;
     }
 
+    .logoImagefront {
+        display: none;
+    }
+
+    .logoImage {
+        display: block;
+    }
 }
 
 @media (max-width: 300px) {
@@ -44,4 +47,3 @@
         display: block;
     }
 }
-

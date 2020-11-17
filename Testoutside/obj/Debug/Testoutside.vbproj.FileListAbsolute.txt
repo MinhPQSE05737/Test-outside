@@ -164,3 +164,7 @@ C:\Users\minhp\OneDrive\Desktop\Test-Outside\Test-outside\Testoutside\obj\Debug\
 C:\Users\minhp\OneDrive\Desktop\Test-Outside\Test-outside\Testoutside\obj\Debug\Testoutside.dll
 C:\Users\minhp\OneDrive\Desktop\Test-Outside\Test-outside\Testoutside\obj\Debug\Testoutside.xml
 C:\Users\minhp\OneDrive\Desktop\Test-Outside\Test-outside\Testoutside\obj\Debug\Testoutside.pdb
+C:\Users\minhp\OneDrive\Desktop\Test-Outside\Test-outside\Testoutside\bin\EntityFramework.dll
+C:\Users\minhp\OneDrive\Desktop\Test-Outside\Test-outside\Testoutside\bin\EntityFramework.SqlServer.dll
+C:\Users\minhp\OneDrive\Desktop\Test-Outside\Test-outside\Testoutside\bin\EntityFramework.xml
+C:\Users\minhp\OneDrive\Desktop\Test-Outside\Test-outside\Testoutside\bin\EntityFramework.SqlServer.xml
