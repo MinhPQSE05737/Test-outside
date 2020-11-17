@@ -7,3 +7,41 @@
 .imagelogo{
     text-align: center;
 }
+.logoImage {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .image {
+        display: none;
+    }
+
+}
+
+@media (max-width: 400px){
+    .image{
+        display: none;
+    }
+    .logoImagefront{
+        display: none;
+    }
+    .logoImage{
+       display:block;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .image {
+        display: none;
+    }
+
+    .logoImagefront {
+        display: none;
+    }
+
+    .logoImage {
+        display: block;
+    }
+}
+

@@ -17,12 +17,14 @@ Public Module BundleConfig
 
         bundles.Add(New ScriptBundle("~/bundles/bootstrap").Include(
                   "~/Scripts/bootstrap.js"))
-
+        bundles.Add(New ScriptBundle("~/scripts/index").Include(
+                  "~/Scripts/index/index.js"))
         bundles.Add(New StyleBundle("~/Content/css").Include(
                   "~/Content/bootstrap.css",
                   "~/Content/site.css"))
         bundles.Add(New StyleBundle("~/Style/css").Include(
                   "~/Content/Style.css"))
+
     End Sub
 End Module
 

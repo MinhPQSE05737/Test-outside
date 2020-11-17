@@ -15,12 +15,12 @@ End Code
             </div>
         </div>
         <div class="col-md-7 listContent">
-
+            Đây là nội dung chính của trang web
         </div>
         <div class="col-md-3">
             <div class="box-right" style="border: solid">
                 <h5>News letter</h5>
-                <input type="text" placeholder="Địa chỉ email..." />
+                <input type="text"class="textboxEmail" placeholder="Địa chỉ email..." onkeypress="runScript(event)"/>
             </div>
         </div>
     </div>
