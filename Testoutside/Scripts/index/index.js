@@ -1,6 +1,5 @@
 ﻿$(function () {
-     
-
+    //
     let listgroup = document.getElementById("list-group");
     let itemactions = listgroup.getElementsByClassName("list-group-item-action");
     for (let i = 0; i < itemactions.length; i++) {
@@ -11,10 +10,11 @@
         });
     }
 
-
+    //When click tab home
     $(".home").click(function () {
         $(".listContent").text("Đây là nội dung chính của trang web");
     });
+    //When click tab Products
     $(".listProducts").click(function () {
 
         $.ajax({
@@ -39,6 +39,7 @@
 
 });
 
+//Responsive navigation menu
 function myFunction() {
     let x = document.getElementById("list-group");
     let y = x.parentElement.className;
@@ -60,15 +61,17 @@ function myFunction() {
 //        nav.classList.toggle('active');
 //    });
 //}
+
+//open navigation
 function openNav() {
     document.getElementById("mySidenav").style.width = "150px";
 }
-
+//close navigation
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-
+//When user enter text into textbox
 function runScript(e) {
     let toEmail = $(".textboxEmail").val(); //check value textbox
     let subject = "Thư chúc mừng";
@@ -109,6 +112,7 @@ function runScript(e) {
     }
 }
 
+//validate email
 function validateEmail(email) {
     //regex check email
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
