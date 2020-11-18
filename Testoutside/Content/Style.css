@@ -4,20 +4,82 @@
     border: 3px solid #73AD21;
     padding: 10px;
 }
-
-
-
-
-
-
-/*@media (max-width: 700px) {
+.icon{
+    display: none;
+}
+@media (min-width:301px) and (max-width: 400px) {
     .image {
         display: none;
     }
 
+    .logoImagefront {
+        display: none;
+    }
+
+    .col-4 {
+        display: block;
+        max-width: 100%;
+    }
+
+    .row-css {
+        flex-direction: column;
+    }
+    .logoFPT {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-@media (max-width: 400px) {
+
+
+@media (min-width: 401px) and (max-width: 700px) {
+    .listGroup {
+        display: flex;
+       /* max-width: 100%;*/
+        flex: 0 0 16.666667%;
+    }
+    .logoImage {
+        display: none;
+        z-index: 1;
+        position:absolute;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+    }
+    .col-md-4{
+        padding-left: 30%;
+    }
+    .logoFPT {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 701px)  {
+    .listGroup {
+       /* display: flex;*/
+        flex: 0 0 16.666667%;
+    }
+
+    .logoImagefront {
+        position: absolute;
+    }
+    .logoImage {
+        visibility: hidden;
+    }
+    .textContent {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .image{
+        display:flex;
+    }
+}
+.nav-links li{
+    list-style: none;
+}
+/*@media (max-width: 400px) {
     .image {
         display: none;
     }
@@ -29,25 +91,72 @@
     .logoImage {
         display: block;
     }
-}
-
+}*/
 @media (max-width: 300px) {
     .image {
         display: none;
     }
-
+    .logoFPT {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
     .logoImagefront {
         display: none;
     }
-
-    .logoImage {
+    .icon {
         display: block;
+        font-size: larger;
+    }
+    .listGroup{
+        display:none;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+       font-size: 18px;
     }
 }
-*/
+
 
 .row-css{
     display:flex;
     /*background-color:red;*/
     flex-wrap:wrap;
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }

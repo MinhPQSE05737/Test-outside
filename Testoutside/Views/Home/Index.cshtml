@@ -1,9 +1,19 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="row row-css">
-    <div class="col-4  col-sm-4 col-md-2">
-        <div id="list-group">
+<div class="row">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Intro</a>
+        <a href="#">Products</a>
+        <a href="#">Links</a>
+        <a href="#">About</a>
+    </div>
+
+    <div class="col-md-2 listGroup">
+        <div id="list-group" class="topnav">
             <a href="#" class="list-group-item list-group-item-action home active">
                 Home
             </a>
@@ -11,19 +21,24 @@
             <a href="#" class="list-group-item list-group-item-action listProducts">Products</a>
             <a href="#" class="list-group-item list-group-item-action">Links</a>
             <a href="#" class="list-group-item list-group-item-action">About</a>
+
         </div>
 
     </div>
-    <div class="col-4 col-sm-8 col-md-6">
+    <div class="col-md-6 textContent">
         <div class="listContent">
             Đây là nội dung chính của trang web
-        </div> 
+        </div>
     </div>
     <div class="col-sm-4 d-md-none"></div>
-    <div class="col-4 col-sm-8 col-md-4">
-        <div class="box-right" style="border: solid">
+    <div class=" col-md-4">
+        <div class="box-right">
             <h5>News letter</h5>
-            <input type="text" class="textboxEmail" placeholder="Địa chỉ email..." onkeypress="runScript(event)" />
+            <form class="form-horizontal ">
+                <div class="form-group form-group-lg">
+                    <input onkeypress="runScript(event)" placeholder="Địa chỉ email..." class="form-control textboxEmail" type="text" id="lg">
+                </div>
+            </form>
         </div>
 
     </div>

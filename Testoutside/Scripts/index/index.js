@@ -1,4 +1,6 @@
 ﻿$(function () {
+     
+
     let listgroup = document.getElementById("list-group");
     let itemactions = listgroup.getElementsByClassName("list-group-item-action");
     for (let i = 0; i < itemactions.length; i++) {
@@ -36,6 +38,37 @@
     });
 
 });
+
+function myFunction() {
+    let x = document.getElementById("list-group");
+    let y = x.parentElement.className;
+    
+    console.log(y);
+    if (x.className === "topnav") {
+        x.className += " responsive";
+        
+    } else {
+        x.className = "topnav";
+        $(".listGroup").hide();
+    }
+}
+//function navSlide() {
+//    const burger = document.querySelector(".burger");
+//    const nav = document.querySelector(".nav-links");
+
+//    burger.addEventListener('click', () => {
+//        nav.classList.toggle('active');
+//    });
+//}
+function openNav() {
+    document.getElementById("mySidenav").style.width = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
 function runScript(e) {
     let toEmail = $(".textboxEmail").val(); //check value textbox
     let subject = "Thư chúc mừng";
