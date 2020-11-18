@@ -1,8 +1,8 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="row">
-    <div class="col-md-2">
+<div class="row row-css">
+    <div class="col-4  col-sm-4 col-md-2">
         <div id="list-group">
             <a href="#" class="list-group-item list-group-item-action home active">
                 Home
@@ -12,14 +12,21 @@
             <a href="#" class="list-group-item list-group-item-action">Links</a>
             <a href="#" class="list-group-item list-group-item-action">About</a>
         </div>
+
     </div>
-    <div class="col-md-7 listContent">
-        Đây là nội dung chính của trang web
+    <div class="col-4 col-sm-8 col-md-6">
+        <div class="listContent">
+            Đây là nội dung chính của trang web
+        </div> 
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-4 d-md-none"></div>
+    <div class="col-4 col-sm-8 col-md-4">
         <div class="box-right" style="border: solid">
             <h5>News letter</h5>
             <input type="text" class="textboxEmail" placeholder="Địa chỉ email..." onkeypress="runScript(event)" />
         </div>
+
     </div>
 </div>
+
+@Styles.Render("~/Style/css")

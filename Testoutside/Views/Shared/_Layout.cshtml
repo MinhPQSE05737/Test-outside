@@ -4,19 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @*<title>@ViewBag.Title - My ASP.NET Application</title>*@
-    @Styles.Render("~/Content/css")
-    @Styles.Render("~/Style/css")
+    @*@Styles.Render("~/Content/css")*@
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
     <div class="container body-content">
         <div class="row">
-            <div class="col-md-2 imageLogo">
+            <div class="d-none d-sm-block col-12 col-sm-12 col-md-2 ">
                 <img class="logoImagefront" src="https://i.chungta.vn/2017/12/22/LogoFPT-2017-copy-3042-1513928399.jpg" width="100" height="100" alt="">
-                <img class="logoImage" src="https://img.giaoduc.net.vn/w700/Uploaded/2020/zdhwqcrnw/2014_03_25/logofpt1.jpg" width="100" height="100" alt="">
+
             </div>
-            <div class="col-md-10">
+            <div class="d-sm-none col-12 col-sm-12 col-md-2">
+                <div class="row d-flex justify-content-center">
+                    <img class="logoImage" src="https://img.giaoduc.net.vn/w700/Uploaded/2020/zdhwqcrnw/2014_03_25/logofpt1.jpg" width="100" height="100" alt="">
+
+                </div>
+
+
+            </div>
+            <div class="d-none d-sm-none d-md-block col-md-10">
                 <img class="image" src="https://www.thuengay.vn/uploads/770x433/ccd6f193b865159bb0df870294a79ecd18d8cf362.png" style="width:100%;height:100px" alt="">
             </div>
         </div>

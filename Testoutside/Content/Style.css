@@ -1,19 +1,16 @@
 ﻿.box-right {
     /*position: absolute;*/
-    right: 0px;
+    /*right: 0px;*/
     border: 3px solid #73AD21;
     padding: 10px;
 }
 
-.imagelogo {
-    text-align: center;
-}
 
-.logoImage {
-    display: none;
-}
 
-@media (max-width: 700px) {
+
+
+
+/*@media (max-width: 700px) {
     .image {
         display: none;
     }
@@ -46,4 +43,11 @@
     .logoImage {
         display: block;
     }
+}
+*/
+
+.row-css{
+    display:flex;
+    /*background-color:red;*/
+    flex-wrap:wrap;
 }
